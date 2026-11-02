@@ -39,24 +39,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<style>
-*{box-sizing:border-box}body{margin:0;background:#0E1116;color:#E8ECF1;font-family:'Inter',system-ui,sans-serif;line-height:1.6}a{color:#F5C542}a:hover{color:#FFE08A}.w{max-width:1120px;margin:0 auto;padding:24px}.sg{font-family:'Space Grotesk',sans-serif;letter-spacing:-.02em}h1,h2,h3{margin:0}.hero{padding-top:48px}.mono{font-family:'JetBrains Mono',monospace}.card{border:1px solid #242B36;background:#141922;border-radius:16px;padding:24px}.soft{color:#C5CCD6}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font-family:'JetBrains Mono',monospace;font-size:12px;color:#E8ECF1;background:#1D2430;border:1px solid #2A313C;border-radius:6px;padding:4px 10px}.btn{display:inline-block;background:#F5C542;color:#0E1116;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:10px}.btn2{display:inline-block;border:1px solid #3A4250;color:#E8ECF1;text-decoration:none;font-weight:500;padding:12px 18px;border-radius:10px}.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
-</style>
+<link rel="stylesheet" href="/proyectos/proyectos.css">
 </head>
-<body>
-<main class="w">
-  <nav class="row" aria-label="Navegación">
-    <a class="btn2" href="/">← Volver al portafolio</a>
-    <a class="btn2" href="/proyectos/edufinance/">Proyecto relacionado: EduFinance</a>
-  </nav>
-
-  <header class="hero">
-    <p class="mono soft">Bot con IA · Proyecto propio</p>
+<body class="project-page">
+<main>
+  <nav class="w nav" aria-label="Navegación"><a class="sg" style="font-size:20px;letter-spacing:-.01em" href="/">Israel Galicia</a><div class="r">
+    <a class="l" href="/">Portafolio</a><a class="l" href="/proyectos/rigeops/">RigeOps</a><a class="l" href="/proyectos/edufinance/">EduFinance</a><a class="l" href="/proyectos/desloque-party/">Desloque Party</a><button class="on" aria-label="Español" data-l="es">ES</button><button aria-label="English" data-l="en">EN</button>
+  </div></nav>
+  <header class="w hero">
+    <p class="mono eyebrow">Bot con IA · Proyecto propio</p>
     <h1 class="sg" style="font-size:46px">Bot de ventas por WhatsApp</h1>
-    <p class="soft" style="max-width:800px">Automatización de atención y ventas para WhatsApp Cloud API, con memoria conversacional, IA y cotizaciones en PDF.</p>
+    <p class="lead">Automatización de atención y ventas para WhatsApp Cloud API, con memoria conversacional, IA y cotizaciones en PDF.</p>
   </header>
 
-  <section class="card" style="margin-top:24px">
+  <section class="w project-section"><div class="card project-card">
     <h2 class="sg" style="font-size:30px">Problema que resuelve</h2>
     <p class="soft">Atender prospectos en WhatsApp de forma más rápida y consistente, manteniendo contexto de la conversación y facilitando el cierre comercial.</p>
     <h2 class="sg" style="font-size:30px;margin-top:20px">Solución desarrollada</h2>
@@ -74,9 +70,9 @@
     </div>
     <h3 class="sg" style="font-size:24px;margin-top:20px">Mi participación</h3>
     <p class="soft">Diseño de arquitectura, integración con WhatsApp y construcción de la capa de IA.</p>
-  </section>
+  </div></section>
 
-  <section class="card" style="margin-top:24px">
+  <section class="w project-section"><div class="card">
     <h2 class="sg" style="font-size:30px">Captura referencial disponible</h2>
     <p class="soft">No hay galería propia pública en este portafolio para este proyecto, pero sí existe una referencia visual del flujo de mensajes en WhatsApp:</p>
     <img src="/img/edu_wa.webp" alt="Referencia visual de conversación por WhatsApp en interfaz móvil" width="300" height="600" loading="lazy" style="max-width:300px;width:100%;height:auto;border-radius:10px;border:1px solid #2A313C;display:block">
@@ -89,7 +85,8 @@
       <a class="btn" href="/">Volver al portafolio</a>
       <a class="btn2" href="/#contacto">Solicitar un desarrollo similar</a>
     </div>
-  </section>
+  </div></section>
 </main>
+<script src="/proyectos/proyectos.js"></script>
 </body>
 </html>

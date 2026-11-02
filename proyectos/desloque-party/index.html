@@ -40,23 +40,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<style>
-*{box-sizing:border-box}body{margin:0;background:#0E1116;color:#E8ECF1;font-family:'Inter',system-ui,sans-serif;line-height:1.6}a{color:#F5C542}a:hover{color:#FFE08A}.w{max-width:1120px;margin:0 auto;padding:24px}.sg{font-family:'Space Grotesk',sans-serif;letter-spacing:-.02em}h1,h2,h3{margin:0}.hero{padding-top:48px}.mono{font-family:'JetBrains Mono',monospace}.card{border:1px solid #242B36;background:#141922;border-radius:16px;padding:24px}.soft{color:#C5CCD6}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font-family:'JetBrains Mono',monospace;font-size:12px;color:#E8ECF1;background:#1D2430;border:1px solid #2A313C;border-radius:6px;padding:4px 10px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.grid img{width:100%;height:auto;border-radius:10px;border:1px solid #2A313C;display:block}.btn{display:inline-block;background:#F5C542;color:#0E1116;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:10px}.btn2{display:inline-block;border:1px solid #3A4250;color:#E8ECF1;text-decoration:none;font-weight:500;padding:12px 18px;border-radius:10px}.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
-</style>
+<link rel="stylesheet" href="/proyectos/proyectos.css">
 </head>
-<body>
-<main class="w">
-  <nav class="row" aria-label="Navegación">
-    <a class="btn2" href="/">← Volver al portafolio</a>
-  </nav>
-
-  <header class="hero">
-    <p class="mono soft">PWA · Proyecto propio</p>
+<body class="project-page">
+<main>
+  <nav class="w nav" aria-label="Navegación"><a class="sg" style="font-size:20px;letter-spacing:-.01em" href="/">Israel Galicia</a><div class="r">
+    <a class="l" href="/">Portafolio</a><a class="l" href="/proyectos/rigeops/">RigeOps</a><a class="l" href="/proyectos/edufinance/">EduFinance</a><a class="l" href="/proyectos/bot-ventas-whatsapp/">Bot WhatsApp</a><button class="on" aria-label="Español" data-l="es">ES</button><button aria-label="English" data-l="en">EN</button>
+  </div></nav>
+  <header class="w hero">
+    <p class="mono eyebrow">PWA · Proyecto propio</p>
     <h1 class="sg" style="font-size:46px">Desloque Party</h1>
-    <p class="soft" style="max-width:800px">Aplicación web progresiva para crear espacios privados por invitación en eventos como bodas, fiestas y aniversarios.</p>
+    <p class="lead">Aplicación web progresiva para crear espacios privados por invitación en eventos como bodas, fiestas y aniversarios.</p>
   </header>
 
-  <section class="card" style="margin-top:24px">
+  <section class="w project-section"><div class="card project-card">
     <h2 class="sg" style="font-size:30px">Problema que resuelve</h2>
     <p class="soft">Concentrar recuerdos y participación de invitados en un espacio privado, accesible desde móvil, sin depender de grupos dispersos o plataformas públicas.</p>
     <h2 class="sg" style="font-size:30px;margin-top:20px">Solución desarrollada</h2>
@@ -72,9 +69,9 @@
     <div class="chips"><span class="chip">React 19</span><span class="chip">Vite</span><span class="chip">Tailwind 4</span><span class="chip">Supabase</span><span class="chip">PWA</span><span class="chip">Vercel</span></div>
     <h3 class="sg" style="font-size:24px;margin-top:20px">Mi participación</h3>
     <p class="soft">Desarrollo y despliegue integral, incluyendo políticas de acceso a datos y notificaciones push.</p>
-  </section>
+  </div></section>
 
-  <section style="margin-top:24px">
+  <section class="w project-section">
     <h2 class="sg" style="font-size:30px">Capturas reales del proyecto</h2>
     <div class="grid" style="margin-top:12px">
       <img src="/img/des_tiempo.webp" alt="Espacio de Desloque con cuenta regresiva y galería" width="1200" height="675">
@@ -82,7 +79,7 @@
     </div>
   </section>
 
-  <section class="card" style="margin-top:24px">
+  <section class="w project-section"><div class="card">
     <h2 class="sg" style="font-size:30px">Enlaces del proyecto</h2>
     <div class="row">
       <a class="btn" href="https://desloque.vercel.app/i/K3XNDMN3">Ver demostración</a>
@@ -90,7 +87,8 @@
       <a class="btn2" href="/#contacto">Solicitar un desarrollo similar</a>
     </div>
     <p class="soft">Repositorio público: no disponible.</p>
-  </section>
+  </div></section>
 </main>
+<script src="/proyectos/proyectos.js"></script>
 </body>
 </html>
